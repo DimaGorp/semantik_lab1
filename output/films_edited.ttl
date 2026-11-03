@@ -1,0 +1,487 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ont: <http://example.org/films/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Actor a rdfs:Class ;
+    rdfs:label "Actor"@en ;
+    rdfs:subClassOf foaf:Person .
+
+ont:Country a rdfs:Class ;
+    rdfs:label "Country"@en .
+
+ont:Director a rdfs:Class ;
+    rdfs:label "Director"@en ;
+    rdfs:subClassOf foaf:Person .
+
+ont:Film a rdfs:Class ;
+    rdfs:label "Film"@en .
+
+ont:Genre a rdfs:Class ;
+    rdfs:label "Genre"@en .
+
+<http://example.org/films/film/Amelie> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Jean_Pierre_Jeunet> ;
+    ont:hasGenre <http://example.org/films/genre/Comedy>,
+        <http://example.org/films/genre/Romance> ;
+    ont:producedIn <http://example.org/films/country/France> ;
+    ont:releaseYear 2001 ;
+    ont:starring <http://example.org/films/actor/Audrey_Tautou> ;
+    dcterms:title "Amélie"@en .
+
+<http://example.org/films/film/Barbie> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Greta_Gerwig> ;
+    ont:hasGenre <http://example.org/films/genre/Adventure>,
+        <http://example.org/films/genre/Comedy>,
+        <http://example.org/films/genre/Fantasy> ;
+    ont:producedIn <http://example.org/films/country/USA>,
+        <http://example.org/films/country/United_Kingdom> ;
+    ont:releaseYear 2023 ;
+    ont:starring <http://example.org/films/actor/Margot_Robbie>,
+        <http://example.org/films/actor/Ryan_Gosling> ;
+    dcterms:title "Barbie"@en .
+
+<http://example.org/films/film/Blade_Runner_2049> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Denis_Villeneuve> ;
+    ont:hasGenre <http://example.org/films/genre/Drama>,
+        <http://example.org/films/genre/Science_Fiction>,
+        <http://example.org/films/genre/Thriller> ;
+    ont:producedIn <http://example.org/films/country/Canada>,
+        <http://example.org/films/country/USA> ;
+    ont:releaseYear 2017 ;
+    ont:starring <http://example.org/films/actor/Harrison_Ford>,
+        <http://example.org/films/actor/Ryan_Gosling> ;
+    dcterms:title "Blade Runner 2049"@en .
+
+<http://example.org/films/film/Dune> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Denis_Villeneuve> ;
+    ont:hasGenre <http://example.org/films/genre/Adventure>,
+        <http://example.org/films/genre/Drama>,
+        <http://example.org/films/genre/Science_Fiction> ;
+    ont:producedIn <http://example.org/films/country/Canada>,
+        <http://example.org/films/country/USA> ;
+    ont:releaseYear 2021 ;
+    ont:starring <http://example.org/films/actor/Rebecca_Ferguson>,
+        <http://example.org/films/actor/Timothee_Chalamet>,
+        <http://example.org/films/actor/Zendaya> ;
+    dcterms:title "Dune"@en .
+
+<http://example.org/films/film/Inception> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Christopher_Nolan> ;
+    ont:hasGenre <http://example.org/films/genre/Action>,
+        <http://example.org/films/genre/Science_Fiction>,
+        <http://example.org/films/genre/Thriller> ;
+    ont:producedIn <http://example.org/films/country/USA>,
+        <http://example.org/films/country/United_Kingdom> ;
+    ont:releaseYear 2010 ;
+    ont:starring <http://example.org/films/actor/Cillian_Murphy>,
+        <http://example.org/films/actor/Elliot_Page>,
+        <http://example.org/films/actor/Joseph_Gordon_Levitt>,
+        <http://example.org/films/actor/Leonardo_DiCaprio>,
+        <http://example.org/films/actor/Michael_Caine>,
+        <http://example.org/films/actor/Tom_Hardy> ;
+    dcterms:title "Inception"@en .
+
+<http://example.org/films/film/Interstellar> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Christopher_Nolan> ;
+    ont:hasGenre <http://example.org/films/genre/Adventure>,
+        <http://example.org/films/genre/Drama>,
+        <http://example.org/films/genre/Science_Fiction> ;
+    ont:producedIn <http://example.org/films/country/USA>,
+        <http://example.org/films/country/United_Kingdom> ;
+    ont:releaseYear 2014 ;
+    ont:starring <http://example.org/films/actor/Anne_Hathaway>,
+        <http://example.org/films/actor/Jessica_Chastain>,
+        <http://example.org/films/actor/Matthew_McConaughey>,
+        <http://example.org/films/actor/Michael_Caine> ;
+    dcterms:title "Interstellar"@en .
+
+<http://example.org/films/film/Kill_Bill_Vol_1> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Quentin_Tarantino> ;
+    ont:hasGenre <http://example.org/films/genre/Action>,
+        <http://example.org/films/genre/Crime> ;
+    ont:producedIn <http://example.org/films/country/USA> ;
+    ont:releaseYear 2003 ;
+    ont:starring <http://example.org/films/actor/Uma_Thurman> ;
+    dcterms:title "Kill Bill: Vol. 1"@en .
+
+<http://example.org/films/film/Lady_Bird> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Greta_Gerwig> ;
+    ont:hasGenre <http://example.org/films/genre/Comedy>,
+        <http://example.org/films/genre/Drama> ;
+    ont:producedIn <http://example.org/films/country/USA> ;
+    ont:releaseYear 2017 ;
+    ont:starring <http://example.org/films/actor/Saoirse_Ronan>,
+        <http://example.org/films/actor/Timothee_Chalamet> ;
+    dcterms:title "Lady Bird"@en .
+
+<http://example.org/films/film/Memories_of_Murder> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Bong_Joon_ho> ;
+    ont:hasGenre <http://example.org/films/genre/Crime>,
+        <http://example.org/films/genre/Drama>,
+        <http://example.org/films/genre/Thriller> ;
+    ont:producedIn <http://example.org/films/country/South_Korea> ;
+    ont:releaseYear 2003 ;
+    ont:starring <http://example.org/films/actor/Song_Kang_ho> ;
+    dcterms:title "Memories of Murder"@en .
+
+<http://example.org/films/film/Oppenheimer> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Christopher_Nolan> ;
+    ont:hasGenre <http://example.org/films/genre/Biography>,
+        <http://example.org/films/genre/Drama> ;
+    ont:producedIn <http://example.org/films/country/USA>,
+        <http://example.org/films/country/United_Kingdom> ;
+    ont:releaseYear 2023 ;
+    ont:starring <http://example.org/films/actor/Cillian_Murphy>,
+        <http://example.org/films/actor/Emily_Blunt>,
+        <http://example.org/films/actor/Matt_Damon>,
+        <http://example.org/films/actor/Robert_Downey_Jr> ;
+    dcterms:title "Oppenheimer"@en .
+
+<http://example.org/films/film/Parasite> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Bong_Joon_ho> ;
+    ont:hasGenre <http://example.org/films/genre/Comedy>,
+        <http://example.org/films/genre/Drama>,
+        <http://example.org/films/genre/Thriller> ;
+    ont:producedIn <http://example.org/films/country/South_Korea> ;
+    ont:releaseYear 2019 ;
+    ont:starring <http://example.org/films/actor/Choi_Woo_shik>,
+        <http://example.org/films/actor/Song_Kang_ho> ;
+    dcterms:title "Parasite"@en .
+
+<http://example.org/films/film/Pulp_Fiction> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Quentin_Tarantino> ;
+    ont:hasGenre <http://example.org/films/genre/Crime>,
+        <http://example.org/films/genre/Drama> ;
+    ont:producedIn <http://example.org/films/country/USA> ;
+    ont:releaseYear 1994 ;
+    ont:starring <http://example.org/films/actor/Bruce_Willis>,
+        <http://example.org/films/actor/John_Travolta>,
+        <http://example.org/films/actor/Samuel_L_Jackson>,
+        <http://example.org/films/actor/Uma_Thurman> ;
+    dcterms:title "Pulp Fiction"@en .
+
+<http://example.org/films/film/Spirited_Away> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Hayao_Miyazaki> ;
+    ont:hasGenre <http://example.org/films/genre/Adventure>,
+        <http://example.org/films/genre/Animation>,
+        <http://example.org/films/genre/Fantasy> ;
+    ont:producedIn <http://example.org/films/country/Japan> ;
+    ont:releaseYear 2001 ;
+    ont:starring <http://example.org/films/actor/Rumi_Hiiragi> ;
+    dcterms:title "Spirited Away"@en .
+
+<http://example.org/films/film/Tenet> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Christopher_Nolan> ;
+    ont:hasGenre <http://example.org/films/genre/Action>,
+        <http://example.org/films/genre/Science_Fiction> ;
+    ont:producedIn <http://example.org/films/country/USA>,
+        <http://example.org/films/country/United_Kingdom> ;
+    ont:releaseYear 2020 ;
+    ont:starring <http://example.org/films/actor/Michael_Caine>,
+        <http://example.org/films/actor/Robert_Pattinson> ;
+    dcterms:title "Tenet"@en .
+
+<http://example.org/films/film/The_Dark_Knight> a ont:Film ;
+    ont:directedBy <http://example.org/films/director/Christopher_Nolan> ;
+    ont:hasGenre <http://example.org/films/genre/Action>,
+        <http://example.org/films/genre/Crime>,
+        <http://example.org/films/genre/Drama> ;
+    ont:producedIn <http://example.org/films/country/USA>,
+        <http://example.org/films/country/United_Kingdom> ;
+    ont:releaseYear 2008 ;
+    ont:starring <http://example.org/films/actor/Christian_Bale>,
+        <http://example.org/films/actor/Gary_Oldman>,
+        <http://example.org/films/actor/Heath_Ledger>,
+        <http://example.org/films/actor/Michael_Caine> ;
+    dcterms:title "The Dark Knight"@en .
+
+<http://example.org/films/actor/Anne_Hathaway> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1982 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Anne Hathaway" .
+
+<http://example.org/films/actor/Audrey_Tautou> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1976 ;
+    ont:citizenOf <http://example.org/films/country/France> ;
+    foaf:name "Audrey Tautou" .
+
+<http://example.org/films/actor/Bruce_Willis> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1955 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Bruce Willis" .
+
+<http://example.org/films/actor/Choi_Woo_shik> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1990 ;
+    ont:citizenOf <http://example.org/films/country/South_Korea> ;
+    foaf:name "Choi Woo-shik" .
+
+<http://example.org/films/actor/Christian_Bale> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1974 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Christian Bale" .
+
+<http://example.org/films/actor/Elliot_Page> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1987 ;
+    ont:citizenOf <http://example.org/films/country/Canada> ;
+    foaf:name "Elliot Page" .
+
+<http://example.org/films/actor/Emily_Blunt> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1983 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Emily Blunt" .
+
+<http://example.org/films/actor/Gary_Oldman> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1958 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Gary Oldman" .
+
+<http://example.org/films/actor/Harrison_Ford> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1942 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Harrison Ford" .
+
+<http://example.org/films/actor/Heath_Ledger> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1979 ;
+    ont:citizenOf <http://example.org/films/country/Australia> ;
+    foaf:name "Heath Ledger" .
+
+<http://example.org/films/actor/Jessica_Chastain> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1977 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Jessica Chastain" .
+
+<http://example.org/films/actor/John_Travolta> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1954 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "John Travolta" .
+
+<http://example.org/films/actor/Joseph_Gordon_Levitt> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1981 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Joseph Gordon-Levitt" .
+
+<http://example.org/films/actor/Leonardo_DiCaprio> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1974 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Leonardo DiCaprio" .
+
+<http://example.org/films/actor/Margot_Robbie> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1990 ;
+    ont:citizenOf <http://example.org/films/country/Australia> ;
+    foaf:name "Margot Robbie" .
+
+<http://example.org/films/actor/Matt_Damon> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1970 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Matt Damon" .
+
+<http://example.org/films/actor/Matthew_McConaughey> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1969 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Matthew McConaughey" .
+
+<http://example.org/films/actor/Rebecca_Ferguson> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1983 ;
+    ont:citizenOf <http://example.org/films/country/Sweden> ;
+    foaf:name "Rebecca Ferguson" .
+
+<http://example.org/films/actor/Robert_Downey_Jr> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1965 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Robert Downey Jr." .
+
+<http://example.org/films/actor/Robert_Pattinson> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1986 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Robert Pattinson" .
+
+<http://example.org/films/actor/Rumi_Hiiragi> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1987 ;
+    ont:citizenOf <http://example.org/films/country/Japan> ;
+    foaf:name "Rumi Hiiragi" .
+
+<http://example.org/films/actor/Samuel_L_Jackson> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1948 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Samuel L. Jackson" .
+
+<http://example.org/films/actor/Saoirse_Ronan> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1994 ;
+    ont:citizenOf <http://example.org/films/country/Ireland> ;
+    foaf:name "Saoirse Ronan" .
+
+<http://example.org/films/actor/Tom_Hardy> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1977 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Tom Hardy" .
+
+<http://example.org/films/actor/Zendaya> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1996 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Zendaya" .
+
+<http://example.org/films/country/Sweden> a ont:Country ;
+    rdfs:label "Sweden"@en .
+
+<http://example.org/films/director/Hayao_Miyazaki> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1941 ;
+    ont:citizenOf <http://example.org/films/country/Japan> ;
+    foaf:name "Hayao Miyazaki" .
+
+<http://example.org/films/director/Jean_Pierre_Jeunet> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1953 ;
+    ont:citizenOf <http://example.org/films/country/France> ;
+    foaf:name "Jean-Pierre Jeunet" .
+
+<http://example.org/films/genre/Animation> a ont:Genre ;
+    rdfs:label "Animation"@en .
+
+<http://example.org/films/genre/Biography> a ont:Genre ;
+    rdfs:label "Biography"@en .
+
+<http://example.org/films/genre/Romance> a ont:Genre ;
+    rdfs:label "Romance"@en .
+
+<http://example.org/films/actor/Cillian_Murphy> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1976 ;
+    ont:citizenOf <http://example.org/films/country/Ireland> ;
+    foaf:name "Cillian Murphy" .
+
+<http://example.org/films/actor/Ryan_Gosling> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1980 ;
+    ont:citizenOf <http://example.org/films/country/Canada> ;
+    foaf:name "Ryan Gosling" .
+
+<http://example.org/films/actor/Song_Kang_ho> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1967 ;
+    ont:citizenOf <http://example.org/films/country/South_Korea> ;
+    foaf:name "Song Kang-ho" .
+
+<http://example.org/films/actor/Timothee_Chalamet> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1995 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Timothée Chalamet" .
+
+<http://example.org/films/actor/Uma_Thurman> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1970 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Uma Thurman" .
+
+<http://example.org/films/country/Australia> a ont:Country ;
+    rdfs:label "Australia"@en .
+
+<http://example.org/films/country/Ireland> a ont:Country ;
+    rdfs:label "Ireland"@en .
+
+<http://example.org/films/director/Bong_Joon_ho> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1969 ;
+    ont:citizenOf <http://example.org/films/country/South_Korea> ;
+    foaf:name "Bong Joon-ho" .
+
+<http://example.org/films/director/Denis_Villeneuve> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1967 ;
+    ont:citizenOf <http://example.org/films/country/Canada> ;
+    foaf:name "Denis Villeneuve" .
+
+<http://example.org/films/director/Greta_Gerwig> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1983 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Greta Gerwig" .
+
+<http://example.org/films/director/Quentin_Tarantino> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1963 ;
+    ont:citizenOf <http://example.org/films/country/USA> ;
+    foaf:name "Quentin Tarantino" .
+
+<http://example.org/films/genre/Fantasy> a ont:Genre ;
+    rdfs:label "Fantasy"@en .
+
+<http://example.org/films/country/France> a ont:Country ;
+    rdfs:label "France"@en .
+
+<http://example.org/films/country/Japan> a ont:Country ;
+    rdfs:label "Japan"@en .
+
+<http://example.org/films/actor/Michael_Caine> a ont:Actor,
+        foaf:Person ;
+    ont:birthYear 1933 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Michael Caine" .
+
+<http://example.org/films/genre/Action> a ont:Genre ;
+    rdfs:label "Action"@en .
+
+<http://example.org/films/genre/Adventure> a ont:Genre ;
+    rdfs:label "Adventure"@en .
+
+<http://example.org/films/genre/Comedy> a ont:Genre ;
+    rdfs:label "Comedy"@en .
+
+<http://example.org/films/genre/Crime> a ont:Genre ;
+    rdfs:label "Crime"@en .
+
+<http://example.org/films/genre/Thriller> a ont:Genre ;
+    rdfs:label "Thriller"@en .
+
+<http://example.org/films/country/Canada> a ont:Country ;
+    rdfs:label "Canada"@en .
+
+<http://example.org/films/country/South_Korea> a ont:Country ;
+    rdfs:label "South Korea"@en .
+
+<http://example.org/films/director/Christopher_Nolan> a ont:Director,
+        foaf:Person ;
+    ont:birthYear 1970 ;
+    ont:citizenOf <http://example.org/films/country/United_Kingdom> ;
+    foaf:name "Christopher Nolan" .
+
+<http://example.org/films/genre/Science_Fiction> a ont:Genre ;
+    rdfs:label "Science Fiction"@en .
+
+<http://example.org/films/genre/Drama> a ont:Genre ;
+    rdfs:label "Drama"@en .
+
+<http://example.org/films/country/United_Kingdom> a ont:Country ;
+    rdfs:label "United Kingdom"@en .
+
+<http://example.org/films/country/USA> a ont:Country ;
+    rdfs:label "USA"@en .
+

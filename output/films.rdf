@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ont="http://example.org/films/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/films/film/Amelie">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Amélie</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Jean_Pierre_Jeunet"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/France"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Comedy"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Romance"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Audrey_Tautou"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/John_Travolta">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>John Travolta</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1954</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Spirited_Away">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Spirited Away</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Hayao_Miyazaki"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/Japan"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Animation"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Fantasy"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Adventure"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Rumi_Hiiragi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Interstellar">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Interstellar</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Christopher_Nolan"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/United_Kingdom"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Science_Fiction"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Adventure"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Matthew_McConaughey"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Anne_Hathaway"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Jessica_Chastain"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Michael_Caine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Kill_Bill_Vol_1">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Kill Bill: Vol. 1</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Quentin_Tarantino"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Action"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Crime"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Uma_Thurman"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Leonardo_DiCaprio">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Leonardo DiCaprio</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1974</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Christopher_Nolan">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Christopher Nolan</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/United_Kingdom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Animation">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Animation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Christian_Bale">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Christian Bale</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1974</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/United_Kingdom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Dune">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Dune</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Denis_Villeneuve"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/Canada"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Science_Fiction"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Adventure"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Timothee_Chalamet"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Zendaya"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Rebecca_Ferguson"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Denis_Villeneuve">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Denis Villeneuve</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1967</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Canada"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Parasite">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Parasite</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Bong_Joon_ho"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/South_Korea"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Thriller"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Comedy"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Song_Kang_ho"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Choi_Woo_shik"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Lady_Bird">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Lady Bird</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Greta_Gerwig"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Comedy"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Saoirse_Ronan"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Timothee_Chalamet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/South_Korea">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">South Korea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Hayao_Miyazaki">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Hayao Miyazaki</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1941</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Japan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Inception">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Inception</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Christopher_Nolan"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/United_Kingdom"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Science_Fiction"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Action"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Thriller"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Leonardo_DiCaprio"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Joseph_Gordon_Levitt"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Elliot_Page"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Tom_Hardy"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Cillian_Murphy"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Michael_Caine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Audrey_Tautou">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Audrey Tautou</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1976</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/France"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/Australia">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">Australia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Cillian_Murphy">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Cillian Murphy</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1976</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Ireland"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Choi_Woo_shik">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Choi Woo-shik</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/South_Korea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/The_Dark_Knight">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">The Dark Knight</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Christopher_Nolan"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/United_Kingdom"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Action"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Crime"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Christian_Bale"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Heath_Ledger"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Michael_Caine"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Gary_Oldman"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Jessica_Chastain">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Jessica Chastain</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Rumi_Hiiragi">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Rumi Hiiragi</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1987</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Japan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Barbie">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Barbie</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Greta_Gerwig"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/United_Kingdom"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Comedy"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Fantasy"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Adventure"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Margot_Robbie"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Ryan_Gosling"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/ontology#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Genre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Thriller">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Thriller</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Saoirse_Ronan">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Saoirse Ronan</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Ireland"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Quentin_Tarantino">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Quentin Tarantino</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1963</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Samuel_L_Jackson">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Samuel L. Jackson</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1948</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Matthew_McConaughey">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Matthew McConaughey</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1969</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Memories_of_Murder">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Memories of Murder</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Bong_Joon_ho"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/South_Korea"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Crime"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Thriller"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Song_Kang_ho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Anne_Hathaway">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Anne Hathaway</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1982</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Harrison_Ford">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Harrison Ford</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1942</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Robert_Downey_Jr">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Robert Downey Jr.</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1965</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/ontology#Actor">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Pulp_Fiction">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Pulp Fiction</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Quentin_Tarantino"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Crime"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/John_Travolta"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Uma_Thurman"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Samuel_L_Jackson"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Bruce_Willis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Emily_Blunt">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Emily Blunt</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1983</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/United_Kingdom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Gary_Oldman">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Gary Oldman</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1958</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/United_Kingdom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/Japan">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">Japan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Joseph_Gordon_Levitt">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Joseph Gordon-Levitt</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1981</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Blade_Runner_2049">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Blade Runner 2049</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Denis_Villeneuve"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/Canada"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Science_Fiction"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Thriller"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Ryan_Gosling"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Harrison_Ford"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/film/Oppenheimer">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Film"/>
+    <dcterms:title xml:lang="en">Oppenheimer</dcterms:title>
+    <ont:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</ont:releaseYear>
+    <ont:directedBy rdf:resource="http://example.org/films/director/Christopher_Nolan"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/USA"/>
+    <ont:producedIn rdf:resource="http://example.org/films/country/United_Kingdom"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Drama"/>
+    <ont:hasGenre rdf:resource="http://example.org/films/genre/Biography"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Cillian_Murphy"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Emily_Blunt"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Robert_Downey_Jr"/>
+    <ont:starring rdf:resource="http://example.org/films/actor/Matt_Damon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Michael_Caine">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Michael Caine</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1933</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/United_Kingdom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Elliot_Page">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Elliot Page</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1987</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Canada"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Bruce_Willis">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Bruce Willis</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1955</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Heath_Ledger">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Heath Ledger</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1979</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Australia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Rebecca_Ferguson">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Rebecca Ferguson</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1983</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Sweden"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Song_Kang_ho">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Song Kang-ho</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1967</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/South_Korea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Drama">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Romance">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Romance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Uma_Thurman">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Uma Thurman</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Comedy">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Comedy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Zendaya">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Zendaya</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Greta_Gerwig">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Greta Gerwig</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1983</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Matt_Damon">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Matt Damon</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/United_Kingdom">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">United Kingdom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Ryan_Gosling">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Ryan Gosling</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Canada"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Timothee_Chalamet">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Timothée Chalamet</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/USA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Jean_Pierre_Jeunet">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Jean-Pierre Jeunet</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1953</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/France"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Tom_Hardy">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Tom Hardy</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/United_Kingdom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/ontology#Director">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Director</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Science_Fiction">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Science Fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/USA">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">USA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/actor/Margot_Robbie">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Actor"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Margot Robbie</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/Australia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Adventure">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Adventure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/France">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">France</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/Ireland">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">Ireland</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Fantasy">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Fantasy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Crime">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Crime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/Canada">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">Canada</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/director/Bong_Joon_ho">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Director"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Bong Joon-ho</foaf:name>
+    <ont:birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1969</ont:birthYear>
+    <ont:citizenOf rdf:resource="http://example.org/films/country/South_Korea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/ontology#Country">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Action">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Action</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/country/Sweden">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Country"/>
+    <rdfs:label xml:lang="en">Sweden</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/genre/Biography">
+    <rdf:type rdf:resource="http://example.org/films/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Biography</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/films/ontology#Film">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Film</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
